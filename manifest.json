@@ -1,0 +1,22 @@
+{
+    "id":  "dev.yofukashino.PIPSize",
+    "name":  "PIPSize",
+    "description":  "Change size of picture in picture on discord with scroll wheel",
+    "author":  {
+                   "discordID":  "1121961711080050780",
+                   "name":  "Nanakusa",
+                   "github":  "YofukashiNo"
+               },
+    "version":  "1.0.0",
+    "updater":  {
+                    "id":  "YofukashiNo/PIPSize",
+                    "type":  "github"
+                },
+    "license":  "MIT",
+    "type":  "replugged-plugin",
+    "renderer":  "src/index.ts",
+    "source":  "https://github.com/YofukashiNo/PIPSize",
+    "image":  [
+                  "https://i.imgur.com/14CNs3a.png?CHANGE-THIS-URL"
+              ]
+}
