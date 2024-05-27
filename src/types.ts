@@ -1,10 +1,7 @@
 import { types } from "replugged";
-import type util from "replugged/util";
 
 export namespace Types {
   export import DefaultTypes = types;
-  export type UtilTree = util.Tree;
-  export type ReactTree = util.Tree & React.ReactElement;
   export interface PictureInPicture {
     PictureInPictureHeader: DefaultTypes.AnyFunction;
     default: (props: {
