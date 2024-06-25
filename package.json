@@ -1,6 +1,6 @@
 {
   "name": "pip-size",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Change size of picture in picture on discord with scroll wheel",
   "engines": {
     "node": ">=20.0.0",
