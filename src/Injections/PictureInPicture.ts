@@ -1,10 +1,18 @@
+import { webpack } from "replugged";
 import { React } from "replugged/common";
 import { PluginInjector, SettingValues } from "../index";
 import { defaultSettings } from "../lib/consts";
 import Modules from "../lib/requiredModules";
 import Utils from "../lib/utils";
+
 export default (): void => {
-  PluginInjector.after(Modules.PictureInPicture, "default", ([{ width }], res) => {
+  const { PictureInPicture } = Modules;
+  const loader = webpack.getFunctionKeyBySource(
+    PictureInPicture,
+    ".pictureInPictureVideo",
+  ) as "default";
+
+  PluginInjector.after(PictureInPicture, loader, ([{ width }], res) => {
     const [size, setSize] = React.useState(
       SettingValues.get("saveValues", defaultSettings.saveValues)
         ? SettingValues.get("value", defaultSettings.value) ?? width
